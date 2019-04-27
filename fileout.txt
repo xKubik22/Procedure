@@ -1,12 +1,14 @@
 Filled container. 
 Container contains 2 elements.
-0: It is plane 
+1: It is plane 
 distance = 1
 capacity = 1
 speed = 1
 distance point to point = 1
-1: It is train
+Mass = 1.42
+2: It is train
 quantity = 1
 speed = 12
 distance point to point = 12
+Mass = 43.213
 Empty container. 

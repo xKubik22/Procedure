@@ -19,6 +19,6 @@ using namespace std;
 					ofst << "Incorrect data!" << endl;
 					break;
 		}
-		ofst << "speed = " << t.speed << endl << "distance point to point = " << t.distAB << endl;
+		ofst << "speed = " << t.speed << endl << "distance point to point = " << t.distAB << endl << "Mass = "<< t.mass << endl;
 		
 	}
