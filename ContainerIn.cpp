@@ -29,6 +29,7 @@ transport* In(ifstream &ifst);
 				current = current->next;
 				current->data = In(ifst);
 				current->next = NULL;
+				c.count++;
 			}
 		}
 	}

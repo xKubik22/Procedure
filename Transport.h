@@ -7,6 +7,7 @@ using namespace std;
 
 	enum key { Plane, Train };
 	struct transport {
+		int speed, distAB;
 		void* obj;
 		key k; 
 	};

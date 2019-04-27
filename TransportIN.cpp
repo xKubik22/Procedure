@@ -17,13 +17,15 @@ using namespace std;
 				p = new plane;
 				s->obj = (void*)Inplane(*p,ifst);
 				s->k = Plane;
-				return s;
+				break;
 		case 2:
 				t = new train;
 				s->k = Train;
 				s->obj = (void*)Intrain(*t,ifst);
-				return s;
+				break;
 		default:
 			return 0;
 		}
+		ifst >> s->speed >> s->distAB;
+		return s;
 	}

@@ -5,7 +5,7 @@ using namespace std;
 //namespace simple_shapes {
 	// самолет
 	struct plane {
-		int dist, cap, speed, distAB; // параметры
+		int dist, cap; // параметры
 	};
 //} // end simple_shapes namespace
 

@@ -6,7 +6,7 @@ using namespace std;
 	train* Intrain(train &t, ifstream &ifst)
 	{
 		
-		ifst >> t.quant >> t.speed >> t.distAB;
+		ifst >> t.quant;
 		return &t;
 	}
 
