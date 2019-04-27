@@ -29,3 +29,4 @@ using namespace std;
 		ifst >> s->speed >> s->distAB;
 		return s;
 	}
+
