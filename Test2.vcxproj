@@ -121,6 +121,8 @@
     <ClCompile Include="Container_constr.cpp" />
     <ClCompile Include="PlaneIN.cpp" />
     <ClCompile Include="PlaneOUT.cpp" />
+    <ClCompile Include="ShipIN.cpp" />
+    <ClCompile Include="ShipOUT.cpp" />
     <ClCompile Include="TrainOut.cpp" />
     <ClCompile Include="TransportIN.cpp" />
     <ClCompile Include="transportOUT.cpp" />
@@ -129,6 +131,7 @@
   <ItemGroup>
     <ClInclude Include="Container.h" />
     <ClInclude Include="plane.h" />
+    <ClInclude Include="Ship.h" />
     <ClInclude Include="Transport.h" />
     <ClInclude Include="train.h" />
   </ItemGroup>

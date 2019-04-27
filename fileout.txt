@@ -1,12 +1,35 @@
 Filled container. 
-Container contains 2 elements.
-0: It is plane 
+Container contains 7 elements.
+1: It is plane 
 distance = 1
 capacity = 1
 speed = 1
 distance point to point = 1
-1: It is train
+2: It is train
 quantity = 1
 speed = 12
 distance point to point = 12
+3: It is plane 
+distance = 2
+capacity = 2
+speed = 2
+distance point to point = 2
+4: It is train
+quantity = 3
+speed = 3
+distance point to point = 3
+5: It is plane 
+distance = 4
+capacity = 4
+speed = 4
+distance point to point = 4
+6: It is plane 
+distance = 5
+capacity = 5
+speed = 5
+distance point to point = 5
+7: It is ship: Watercapacity = 1
+Type of ship: Tanker
+speed = 2
+distance point to point = 2
 Empty container. 
