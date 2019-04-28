@@ -11,15 +11,6 @@ using namespace std;
 		c.head = NULL;
 		c.count = 0;
 	}
-	//void Adds(container &c)
-	//{
-	//	list *Addelem = new list;
-	//	Addelem->data = NULL; //внести данные
-	//	Addelem->next = c.head;
-	//	c.head = Addelem;
-	//	c.count++;
-	//	c.head->next = NULL;
-	//}
 
 	void Clear(container &c)
 	{

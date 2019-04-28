@@ -8,7 +8,7 @@ using namespace std;
 void Init(container &c);
 void Clear(container &c);
 void Incont(container &c, ifstream &ifst);
-void Outcont(container &c, ofstream &ofst);
+void Out_Ship(container &c, ofstream &ofst);
 
 int main(int argc, char* argv[])
 {
@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
 	Init(c);
 	Incont(c,ifst);
 	ofst << "Filled container. " << endl;
-	Outcont(c, ofst);
+	Out_Ship(c, ofst);
 	Clear(c);
 	ofst << "Empty container. " << endl;
 	//Outcont(c, ofst);
