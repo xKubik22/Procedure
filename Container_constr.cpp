@@ -5,21 +5,42 @@
 
 using namespace std;
 
+double time(transport &t);
 //namespace simple_shapes {
 	void Init(container &c)
 	{
 		c.head = NULL;
 		c.count = 0;
 	}
-	//void Adds(container &c)
-	//{
-	//	list *Addelem = new list;
-	//	Addelem->data = NULL; //внести данные
-	//	Addelem->next = c.head;
-	//	c.head = Addelem;
-	//	c.count++;
-	//	c.head->next = NULL;
-	//}
+	bool Compare(transport *first, transport * second)
+	{
+		return time(*first) > time(*second);
+	}
+	void Sort(container &c){
+		list* a, *b, *p, *h = NULL;
+
+		for (list* i = c.head; i != NULL; ) {
+			a = i;
+			i = i->next;
+			b = h;
+			for (p = NULL; (b != NULL) && Compare(a->data ,b->data); ) {
+				p = b;
+				b = b->next;
+			}
+
+			if (p == NULL) {
+				a->next = h;
+				h = a;
+			}
+			else {
+				a->next = b;
+				p->next = a;
+			}
+		}
+		if (h != NULL)
+			c.head = h;
+	}
+
 
 	void Clear(container &c)
 	{

@@ -9,6 +9,7 @@ void Init(container &c);
 void Clear(container &c);
 void Incont(container &c, ifstream &ifst);
 void Outcont(container &c, ofstream &ofst);
+void Sort(container &c);
 
 int main(int argc, char* argv[])
 {
@@ -24,6 +25,7 @@ int main(int argc, char* argv[])
 	Init(c);
 	Incont(c,ifst);
 	ofst << "Filled container. " << endl;
+	Sort(c);
 	Outcont(c, ofst);
 	Clear(c);
 	ofst << "Empty container. " << endl;
