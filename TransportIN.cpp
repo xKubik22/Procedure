@@ -34,7 +34,7 @@ using namespace std;
 		default:
 			return 0;
 		}
-		ifst >> s->speed >> s->distAB;
+		ifst >> s->speed >> s->distAB>> s->mass;
 		return s;
 	}
 
