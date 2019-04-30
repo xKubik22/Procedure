@@ -41,7 +41,6 @@ double time(transport &t);
 			c.head = h;
 	}
 
-
 	void Clear(container &c)
 	{
 		

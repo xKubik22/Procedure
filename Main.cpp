@@ -10,6 +10,7 @@ void Clear(container &c);
 void Incont(container &c, ifstream &ifst);
 void Outcont(container &c, ofstream &ofst);
 void Sort(container &c);
+void Out_Ship(container &c, ofstream &ofst);
 
 int main(int argc, char* argv[])
 {
@@ -27,9 +28,9 @@ int main(int argc, char* argv[])
 	ofst << "Filled container. " << endl;
 	Sort(c);
 	Outcont(c, ofst);
+	Out_Ship(c, ofst);
 	Clear(c);
 	ofst << "Empty container. " << endl;
-	//Outcont(c, ofst);
 	cout << "Stop" << endl;
 	return 0;
 
