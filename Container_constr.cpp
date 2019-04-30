@@ -14,7 +14,10 @@ double time(transport &t);
 	}
 	bool Compare(transport *first, transport * second)
 	{
-		return time(*first) > time(*second);
+		if (first != NULL && second != NULL)
+		{
+			return time(*first) > time(*second);
+		}
 	}
 	void Sort(container &c){
 		list* a, *b, *p, *h = NULL;

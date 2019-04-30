@@ -11,7 +11,7 @@
 	double time(transport &t);
 	// ¬ывод содержимого контейнера в указанный поток
 
-	void Out_Ship(container &c, ofstream &ofst)
+	void Outcont(container &c, ofstream &ofst)
 	{
 		ofst<< "Container contains " <<c.count<< " elements." << endl;
 		list *k = c.head;
@@ -22,7 +22,7 @@
 			k = k->next;
 		}
 	}
-	void Outcont(container &c, ofstream &ofst)
+	void Out_Ship(container &c, ofstream &ofst)
 	{
 		list *k = c.head;
 		ofst << "Only ships." << endl;
