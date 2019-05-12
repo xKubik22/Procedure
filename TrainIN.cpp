@@ -1,16 +1,14 @@
 #include <fstream>
 #include <iostream>
-#include "train.h"
+
+#include "Train.h"
+
 using namespace std;
 
-	train* Intrain(train &t, ifstream &ifst)
-	{
-		
-		ifst >> t.quant;
-		return &t;
-	}
+string FileRead(ifstream &ifst);
 
-
-
-
-
+train* Intrain(train &t, ifstream &ifst)
+{
+	t.quant = stoi(FileRead(ifst));
+	return &t;
+}

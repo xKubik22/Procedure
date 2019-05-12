@@ -1,0 +1,3 @@
+It is ship: 
+Watercapacity = 5
+Type of ship : Lainer

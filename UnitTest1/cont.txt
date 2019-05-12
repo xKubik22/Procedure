@@ -1,0 +1,21 @@
+Container contains 3 elements.
+1: It is plane 
+distance = 20
+capacity = 30
+speed = 40
+distance point to point = 30
+Mass = 20
+time = 0.75
+2: It is train
+quantity = 10
+speed = 20
+distance point to point = 30
+Mass = 40
+time = 1.5
+3: It is ship: 
+Watercapacity = 5
+Type of ship : Lainer
+speed = 7
+distance point to point = 8
+Mass = 9
+time = 1.14286

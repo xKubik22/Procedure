@@ -1,6 +1,8 @@
 #include <fstream>
 #include <iostream>
-#include "train.h"
+
+#include "Train.h"
+
 using namespace std;
 
 void Outtrain(train* t, ofstream &ofst)

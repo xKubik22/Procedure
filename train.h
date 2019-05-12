@@ -1,11 +1,10 @@
 #pragma once
 #include <iostream>
 #include <fstream>
+
 using namespace std;
 
-//namespace simple_shapes {
-	// поезд
-	struct train {
-		int quant; // параметры
-	};
-//}
+struct train 
+{
+	int quant; // параметры
+};

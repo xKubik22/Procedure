@@ -1,0 +1,7 @@
+It is plane 
+distance = 20
+capacity = 30
+speed = 40
+distance point to point = 30
+Mass = 20
+time = 0.75

@@ -2,21 +2,15 @@
 #include <iostream>
 #include <fstream>
 
-//namespace simple_shapes{
-	
-	struct transport;
-	struct list;
-	struct container
-	{
-		list* head;
-		int count;
-	};
-	struct list
-	{
-		transport* data=NULL;
-		list* next=NULL;//Указатель на след.элемент
-		
-	};
-
-
-//}
+struct transport;
+struct list;
+struct container
+{
+	list* head; // начало списка
+	int count; // количество элементов
+};
+struct list
+{
+	transport* data = NULL; // данные
+	list* next = NULL; // указатель на след.элемент
+};

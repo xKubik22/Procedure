@@ -1,23 +1,33 @@
 #include <fstream>
 #include <iostream>
+
 #include "Ship.h"
+
 using namespace std;
 
 void Outship(ship *s, ofstream &ofst)
 {
-	ofst << "It is ship: Watercapacity = " << s->water << endl;
-	switch (s->typeship)
+	ofst << "It is ship" << endl << "Watercapacity = " << s->water << endl << "Type of ship : ";
+	if (s->typeship == Lainer)
 	{
-	case 1:
-		ofst << "Type of ship: Lainer" << endl;
-		break;
-	case 2:
-		ofst << "Type of ship: Tanker" << endl;
-		break;
-	case 3:
-		ofst << "Type of ship: Tug" << endl;
-		break;
-	default:
-		break;
+		ofst << "Lainer" << endl;
+	}
+	else
+	{
+		if (s->typeship == Tanker)
+		{
+			ofst << "Tanker" << endl;
+		}
+		else
+		{
+			if (s->typeship == Tug)
+			{
+				ofst << "Tug" << endl;
+			}
+			else
+			{
+				ofst << "Incorrect type of ship" << endl;
+			}
+		}
 	}
 }

@@ -27,9 +27,6 @@
     <ClCompile Include="TransportIN.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="transportOUT.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="PlaneOUT.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -51,21 +48,27 @@
     <ClCompile Include="ShipOUT.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="FileRead.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="TransportOUT.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Container.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="plane.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="train.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Transport.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Ship.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Train.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
