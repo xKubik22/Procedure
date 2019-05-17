@@ -5,7 +5,7 @@
 using namespace std;
 
 enum type{Lainer, Tanker, Tug};
-struct ship
+struct Ship
 {
 	int water; // параметры
 	type typeship; // параметры

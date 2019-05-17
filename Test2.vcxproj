@@ -120,6 +120,7 @@
     <ClCompile Include="ContainerIn.cpp" />
     <ClCompile Include="ContainerOut.cpp" />
     <ClCompile Include="Container_constr.cpp" />
+    <ClCompile Include="Multimethod.cpp" />
     <ClCompile Include="PlaneIN.cpp" />
     <ClCompile Include="PlaneOUT.cpp" />
     <ClCompile Include="ShipIN.cpp" />

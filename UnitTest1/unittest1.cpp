@@ -30,7 +30,7 @@ namespace UnitTest2
 			ofstream ofst("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\fileout.txt");
 			ifstream ifstr("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\trsp.txt");
 			ifstream ifst2("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\fileout.txt");
-			transport* test = In(ifst);
+			Transport* test = In(ifst);
 			Out(*test, ofst);
 			ofst.close();
 			string test_str;
@@ -52,7 +52,7 @@ namespace UnitTest2
 			ofstream ofst("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\fileout.txt");
 			ifstream ifstr("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\pln.txt");
 			ifstream ifst2("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\fileout.txt");
-			transport* test = In(ifst);
+			Transport* test = In(ifst);
 			Outplane((plane*)test->obj,ofst);
 			string test_str;
 			string s;
@@ -74,7 +74,7 @@ namespace UnitTest2
 			ofstream ofst("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\fileout.txt");
 			ifstream ifstr("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\trn.txt");
 			ifstream ifst2("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\fileout.txt");
-			transport* test = In(ifst);
+			Transport* test = In(ifst);
 			test = In(ifst);
 			Outtrain((train*)test->obj, ofst);
 			string test_str;
@@ -97,7 +97,7 @@ namespace UnitTest2
 			ofstream ofst("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\fileout.txt");
 			ifstream ifstr("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\shp.txt");
 			ifstream ifst2("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\fileout.txt");
-			transport* test = In(ifst);
+			Transport* test = In(ifst);
 			test = In(ifst);
 			test = In(ifst);
 			Outship((ship*)test->obj, ofst);
@@ -121,7 +121,7 @@ namespace UnitTest2
 			ofstream ofst("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\fileout.txt");
 			ifstream ifstr("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\cont.txt");
 			ifstream ifst2("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\fileout.txt");
-			container test;
+			Container test;
 			Init(test);
 			Incont(test,ifst);
 			Outcont(test, ofst);
@@ -145,7 +145,7 @@ namespace UnitTest2
 			ofstream ofst("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\fileout.txt");
 			ifstream ifstr("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\onshp.txt");
 			ifstream ifst2("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\fileout.txt");
-			container test;
+			Container test;
 			Init(test);
 			Incont(test, ifst);
 			Out_Ship(test, ofst);
@@ -170,15 +170,15 @@ namespace UnitTest2
 		TEST_METHOD(timetest)
 		{
 			ifstream ifst("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\filein.txt");
-			transport *test = In(ifst);
+			Transport *test = In(ifst);
 			double testTime = 0.75;
 			Assert::AreEqual(testTime, time(*test));
 		}
 		TEST_METHOD(compare)
 		{
 			ifstream ifst("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\filein.txt");
-			transport *test = In(ifst);
-			transport *test2 = In(ifst);
+			Transport *test = In(ifst);
+			Transport *test2 = In(ifst);
 			bool compar = false;
 			Assert::AreEqual(compar, Compare(test,test2));
 		}
@@ -188,7 +188,7 @@ namespace UnitTest2
 	public:
 		TEST_METHOD(sortfunct)
 		{
-			container c;
+			Container c;
 			ifstream ifst("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\filein.txt");
 			ofstream ofst("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\fileout.txt");
 			ifstream ifstr("C:\\Users\\Кирилл\\source\\repos\\Test2\\UnitTest1\\sort.txt");
@@ -222,7 +222,7 @@ namespace UnitTest2
 			int distAB_test = 30;
 			float mass_test = 20.0;
 			ifstream ifst("C:\\Users\\Кирилл\\source\\repos\\LB1--class\\UnitTest2\\filein.txt");
-			transport *test = In(ifst);
+			Transport *test = In(ifst);
 			Assert::AreEqual(distAB_test, test->distAB);
 			Assert::AreEqual(speed_test, test->speed);
 			Assert::AreEqual(mass_test, test->mass);
@@ -268,7 +268,7 @@ namespace UnitTest2
 		TEST_METHOD(containerin_test)
 		{
 			int count_test = 3;
-			container test;
+			Container test;
 			ifstream ifst("C:\\Users\\Кирилл\\source\\repos\\LB1--class\\UnitTest2\\filein.txt");
 			Init(test);
 			Incont(test,ifst);

@@ -5,12 +5,13 @@
 
 using namespace std;
 
-void Init(container &c);
-void Clear(container &c);
-void Incont(container &c, ifstream &ifst);
-void Outcont(container &c, ofstream &ofst);
-void Sort(container &c);
-void Out_Ship(container &c, ofstream &ofst);
+void Init(Container &c);
+void Clear(Container &c);
+void Incont(Container &c, ifstream &ifst);
+void Outcont(Container &c, ofstream &ofst);
+void Sort(Container &c);
+void Out_Ship(Container &c, ofstream &ofst);
+void MultiMethod(Container &c, ofstream &ofst);
 
 int main(int argc, char* argv[])
 {
@@ -28,16 +29,17 @@ int main(int argc, char* argv[])
 		return 0;
 	}
 	cout << "Start" << endl;
-	container c;
+	Container c;
 	Init(c);
 	Incont(c,ifst);
-	ofst << "Filled container. " << endl;
+	ofst << "Filled Container. " << endl;
 	Outcont(c, ofst);
+	MultiMethod(c, ofst);
 	Sort(c);
 	Outcont(c, ofst);
 	Out_Ship(c, ofst);
 	Clear(c);
-	ofst << "Empty container. " << endl;
+	ofst << "Empty Container. " << endl;
 	cout << "Stop" << endl;
 	return 0;
 }

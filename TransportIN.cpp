@@ -6,33 +6,33 @@
 
 using namespace std;
 
-plane* Inplane(plane &p, ifstream &ifst);
-train* Intrain(train &t, ifstream &ifst);
-ship* Inship(ship &s, ifstream&ifst);
+Plane* InPlane(Plane &p, ifstream &ifst);
+Train* InTrain(Train &t, ifstream &ifst);
+Ship* Inship(Ship &s, ifstream&ifst);
 string FileRead(ifstream &ifst);
 
-transport* In(ifstream &ifst)
+Transport* In(ifstream &ifst)
 {
-	transport* s = new transport;
+	Transport* s = new Transport;
 	int k;
-	plane* p;
-	train* t;
-	ship* shp;
+	Plane* p;
+	Train* t;
+	Ship* shp;
 	k = stoi(FileRead(ifst));
 	switch (k) 
 	{
 	case 1:
-		p = new plane;
-		s->obj = (void*)Inplane(*p, ifst);
+		p = new Plane;
+		s->obj = (void*)InPlane(*p, ifst);
 		s->k = Plane;
 		break;
 	case 2:
-		t = new train;
+		t = new Train;
 		s->k = Train;
-		s->obj = (void*)Intrain(*t, ifst);
+		s->obj = (void*)InTrain(*t, ifst);
 		break;
 	case 3:
-		shp = new ship;
+		shp = new Ship;
 		s->k = Ship;
 		s->obj = (void*)Inship(*shp, ifst);
 		break;

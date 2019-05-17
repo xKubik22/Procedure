@@ -6,15 +6,15 @@
 
 using namespace std;
 
-double Time(transport &t);
+double Time(Transport &t);
 
-void Init(container &c)
+void Init(Container &c)
 {
 	c.head = NULL;
 	c.count = 0;
 }
 
-bool Compare(transport *first, transport * second)
+bool Compare(Transport *first, Transport * second)
 {
 	if (first != NULL && second != NULL)
 	{
@@ -22,10 +22,10 @@ bool Compare(transport *first, transport * second)
 	}
 }
 
-void Sort(container &c) 
+void Sort(Container &c) 
 {
-	list* a, *b, *p, *h = NULL;
-	for (list* i = c.head; i != NULL; )
+	List* a, *b, *p, *h = NULL;
+	for (List* i = c.head; i != NULL; )
 	{
 		a = i;
 		i = i->next;
@@ -50,11 +50,11 @@ void Sort(container &c)
 		c.head = h;
 }
 
-void Clear(container &c)
+void Clear(Container &c)
 {
 	while (c.count != 0)
 	{
-		list* k = c.head;
+		List* k = c.head;
 		c.head = c.head->next;
 		delete k;
 		c.count--;

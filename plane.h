@@ -4,7 +4,7 @@
 
 using namespace std;
 
-struct plane 
+struct Plane 
 {
 	int dist, cap; // параметры
 };

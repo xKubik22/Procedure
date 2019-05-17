@@ -2,15 +2,15 @@
 #include <iostream>
 #include <fstream>
 
-struct transport;
-struct list;
-struct container
+struct Transport;
+struct List;
+struct Container
 {
-	list* head; // начало списка
+	List* head; // начало списка
 	int count; // количество элементов
 };
-struct list
+struct List
 {
-	transport* data = NULL; // данные
-	list* next = NULL; // указатель на след.элемент
+	Transport* data = NULL; // данные
+	List* next = NULL; // указатель на след.элемент
 };

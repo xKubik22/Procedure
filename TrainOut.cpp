@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void Outtrain(train* t, ofstream &ofst)
+void OutTrain(Train* t, ofstream &ofst)
 {
-	ofst << "It is train" << endl << "quantity = " << t->quant << endl;
+	ofst << "It is Train" << endl << "quantity = " << t->quant << endl;
 }

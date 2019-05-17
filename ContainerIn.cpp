@@ -6,12 +6,12 @@
 
 using namespace std;
  
-transport* In(ifstream &ifst);
+Transport* In(ifstream &ifst);
 
-void Incont(container &c, ifstream &ifst)
+void Incont(Container &c, ifstream &ifst)
 {
-	list* current = c.head;
-	list* head = new list;
+	List* current = c.head;
+	List* head = new List;
 	while (!ifst.eof())
 	{
 		if (c.count == 0)
@@ -24,7 +24,7 @@ void Incont(container &c, ifstream &ifst)
 		}
 		else
 		{
-			current->next = new list;
+			current->next = new List;
 			current = current->next;
 			current->data = In(ifst);
 			current->next = NULL;

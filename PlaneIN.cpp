@@ -8,7 +8,7 @@ using namespace std;
 
 string FileRead(ifstream &ifst);
 
-plane* Inplane(plane &p, ifstream &ifst)
+Plane* InPlane(Plane &p, ifstream &ifst)
 {
 	p.dist = stoi(FileRead(ifst));
 	p.cap = stoi(FileRead(ifst));

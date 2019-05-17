@@ -4,12 +4,12 @@
 #include "Container.h"
 #include "Transport.h"
 
-void Out(transport &t, ofstream &ofst);
+void Out(Transport &t, ofstream &ofst);
 
-void Outcont(container &c, ofstream &ofst)
+void Outcont(Container &c, ofstream &ofst)
 {
 	ofst << "Container contains " << c.count << " elements." << endl;
-	list* k = c.head;
+	List* k = c.head;
 	for (int i = 0; i < c.count; i++)
 	{
 		ofst << i + 1 << ": ";
@@ -17,9 +17,10 @@ void Outcont(container &c, ofstream &ofst)
 		k = k->next;
 	}
 }
-void Out_Ship(container &c, ofstream &ofst)
+
+void Out_Ship(Container &c, ofstream &ofst)
 {
-	list* k = c.head;
+	List* k = c.head;
 	ofst << "Only ships." << endl;
 	for (int i = 0; i < c.count; i++)
 	{

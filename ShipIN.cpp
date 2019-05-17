@@ -8,7 +8,7 @@ using namespace std;
 
 string FileRead(ifstream &ifst);
 
-ship* Inship(ship &s, ifstream &ifst)
+Ship* Inship(Ship &s, ifstream &ifst)
 {
 	int type;
 	s.water = stoi(FileRead(ifst));

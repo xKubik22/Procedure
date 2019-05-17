@@ -9,7 +9,7 @@
 using namespace std;
 	
 enum key { Plane, Train, Ship };
-struct transport 
+struct Transport 
 {
 	int speed, distAB; // параметры
 	float mass; // параметры

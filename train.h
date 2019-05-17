@@ -4,7 +4,7 @@
 
 using namespace std;
 
-struct train 
+struct Train 
 {
 	int quant; // параметры
 };

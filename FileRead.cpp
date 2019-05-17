@@ -7,13 +7,13 @@ using namespace std;
 string FileRead(ifstream &ifst)
 {
 	string workstr = "";
-	bool Number = true; 
+	bool Number = true;
 	ifst >> workstr;
 	if (workstr != "")
 	{
-		for (int i = 0; i < workstr.length();i++)
+		for (int i = 0; i < workstr.length(); i++)
 		{
-			if (!isdigit(workstr[i]))
+			if (!isdigit((unsigned char)workstr[i]))
 			{
 				Number = false;
 				break;
@@ -24,13 +24,14 @@ string FileRead(ifstream &ifst)
 	{
 		Number = false;
 	}
-	if (Number)
+	if (Number == true)
 	{
-		 return workstr;
+		return workstr;
 	}
 	else
 	{
-		cout << "Uncorrected symbols in file: Filein.txt";
+		cout << "Uncorrected symbols in file: Filein.txt" << endl;
+		system("pause");
 		exit(0);
 	}
 }
